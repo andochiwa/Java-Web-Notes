@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function onloadFun() {
+            alert('静态注册onload事件, 所有代码');
+        }
+
+        //动态注册是固定写法
+        window.onload = function() {
+            alert("动态注册的unload事件");
+        }
+    </script>
+</head>
+<!-- 静态注册
+<body onload="alert('静态注册onload事件')"> -->
+<body>
+
+</body>
+</html>

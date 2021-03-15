@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> <!--当前HTML页面用的是中文简体-->
+<head>
+    <!--设置编码-->
+    <meta charset="utf-8">
+    <!--使用ie最新的渲染模式 展示页面-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+        viewport:视口，浏览器上网页内容的可视区域
+        【以下设置 只在移动设备上生效】
+        content="width=device-width 设置视口的宽度， device-width：动态设置宽度 设备宽度
+        initial-scale=1 初始化缩放设置     移动设备在打开网页时的缩放级别 100% 正常
+                                        1~5 -> 100%~500%
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="static/js/jquery-3.5.1.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="static/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--container容器特点：居中，两端留白-->
+<div class="container" style="border: 1px solid red;">
+    121212
+</div>
+
+<!--container-fluid：占据了视口100%的宽度-->
+<div class="container-fluid" style="border: 1px solid red;">
+    121212
+</div>
+
+<!--栅格系统
+    定义一个布局容器
+    在布局容器中定义一行，在行中定义列
+-->
+<div class="container">
+    <div class="row">
+        <!--栅格参数：col-屏幕尺寸-占用列数
+            列元素占用列数总和12
+        -->
+        <div class="col-lg-2" style="border: 1px solid blue">11111</div>
+        <div class="col-lg-4" style="border: 1px solid red">22222</div>
+        <div class="col-lg-6" style="border: 1px solid blue">33333</div>
+    </div>
+</div>
+
+<!--栅格可以进行无限嵌套
+    嵌套方式必须是  行——列——行——列...
+-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-11" style="border: 1px solid red;">
+            <div class="row">
+                <div class="col-lg-11" style="border: 1px solid blue;">
+                    <div class="row">
+                        <div class="col-lg-11" style="border: 1px solid greenyellow;">
+                                1111
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

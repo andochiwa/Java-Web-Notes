@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Demo/script/jquery-1.7.2.js"></script>
+    <script>
+        $(function() {
+            // // 不传参数是获取，传参数是设置
+            // alert($("div").html()); // 获取
+            // $("div").html("<h1>我是div中的标题1<h1/>"); //设置
+            
+            $("button").click(function() {
+                // alert($("#password").val()); // 获取
+                $("#password").val("超级程序猿");
+            });
+            // 操作默认复选框
+            $(":checkbox,:text").val(["checkbox1", "checkbox2", "123"]);
+        });
+    </script>
+</head>
+<body>
+    <div>我是div标签 <span>我是div中的span标签</span></div>
+    <input type="text" name="username" id="password">
+    <button>操作输入框</button><br>
+    <input type="checkbox" name="checkbox" value="checkbox1">checkbox1
+    <input type="checkbox" name="checkbox" value="checkbox2">checkbox2
+    <input type="checkbox" name="checkbox" value="checkbox3">checkbox3
+</body>
+</html>

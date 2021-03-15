@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // 表示要求字符串中，是否包含字母e
+        var patt = new RegExp("e");
+
+        // 表示字符串中，是否包含a,b,c任意一个
+        patt = /[abc]/;
+
+        // 表示是否包含范围内字母
+        patt = /[a-z]/;
+
+        // 表示是否包含字母，数字，下划线
+        patt = /\w/;
+
+        // 表示要求字符串中至少包含一个a
+        patt = /a+/;
+        // 包含零个或多个
+        patt = /a*/;
+        // 包含零个或一个
+        patt = /a?/;
+        // 是否包含连续三个a
+        patt = /a{3}/;
+        // 是否包含连续至少3个最多5个的a
+        patt = /a{3,5}/;
+        // 至少三个连续的a
+        patt = /a{3,}/;
+        // 必须以a结尾
+        patt = /a$/;
+        // 开头以a结尾
+        patt = /^a/;
+
+        alert(patt.test("2131aaaaa23a"))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

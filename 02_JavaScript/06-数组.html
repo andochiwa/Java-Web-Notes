@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var arr = [];
+        alert(arr.length); //0
+        arr[0] = 12;
+        alert(arr.length); //1
+        arr[2] = "abc";
+        alert(arr.length); //扩容为3,arr[1]为undefined
+
+        // 不能用int
+        for(var i = 0; i < 3; i++) {
+            alert(arr[i]);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

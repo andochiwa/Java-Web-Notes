@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function onchangeFun() {
+            alert("静态改变");
+        }
+
+        window.onload = function() {
+            var selObj = document.getElementById("sel01");
+            selObj.onchange = function() {
+                alert("动态改变")
+            }
+        }
+    </script>
+</head>
+<body>
+    <select name="" id="" onchange="onchangeFun();">
+        <option value="">--one--</option>
+        <option value="">--two--</option>
+        <option value="">--three--</option>
+        <option value="">--four--</option>
+    </select>
+    <br>
+    <select name="" id="sel01" onchange="onchangeFun();">
+        <option value="">--1--</option>
+        <option value="">--2--</option>
+        <option value="">--3--</option>
+        <option value="">--4--</option>
+    </select>
+    
+</body>
+</html>
